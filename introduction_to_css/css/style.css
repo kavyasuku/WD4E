@@ -47,4 +47,8 @@ h1{
 p{
     margin:0;
     padding: 20px;
+    line-height: 115%;
+}
+footer a{
+    color: rgb(166, 167, 156);
 }
