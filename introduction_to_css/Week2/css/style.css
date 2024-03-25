@@ -9,13 +9,16 @@ header{
     
 }
 nav{
+    
     background-color:  rgb(9, 22, 22);
     padding: 5px;
-    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
     margin-bottom: 20px;
 	
 }
 nav img {
+    
     width: 10%;
     position: relative;
     top:20px;
@@ -34,6 +37,7 @@ footer{
 }
 
 ul{
+    width:80%;
     display: flex;
     justify-content: space-around;
     list-style-type: none;
