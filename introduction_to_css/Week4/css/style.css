@@ -1,0 +1,202 @@
+body{
+    margin:0px;
+}
+header{
+    height:20%;
+    background-color:  #A73121;
+}
+.skiptomain{
+    position: absolute;
+    top:10px;
+    color: #DAD4B5;
+    opacity: 0;
+}
+.skiptomain:focus{
+    color: #DAD4B5;
+    opacity: 1;
+}
+nav{
+    
+    margin: 0px;
+    display: inline-block;
+    width: 100%;
+    
+}
+nav div.h1{
+    font-family: fantasy;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 1%;
+    float: left;
+    font-size: 3vw;
+    
+}
+nav a{
+    color: #F2E8C6;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin:0px ;
+    padding: 1%;
+    float: right;
+    align-content: center;
+}
+li{
+    margin:2px 10px;
+    font-size: 2vw;
+    color: #F2E8C6;
+}
+li>a:hover{
+    opacity: 0.75;
+}
+li>a:focus{
+    color: black;
+    opacity: 0.9;
+}
+main.indexMain{
+    margin: 0px;
+    display: block;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.75)), url('../images/main-page-books.jpg');
+    
+    background-size: 100%;
+    width:100%;
+    height:100vh;
+    
+}
+
+main.indexMain>div{
+    font-family: serif;
+    display: grid;
+    grid-template-columns: 100vw;
+    align-content: center;
+    justify-items: center;
+    color:#F2E8C6;
+    height: 100vh;
+    font-size: 50px;
+    font-weight: 100;
+    align-items: end;
+    
+
+}
+
+span{
+    font-size: 320%;
+}
+
+div{
+    text-align: right;
+}
+
+.button{
+    background-color: #A73121;
+    color: #F2E8C6;
+    min-width: 150px;
+    min-height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 40px;
+}
+
+a.button {
+    color: #F2E8C6;
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    padding:10px;
+}
+.aboutusMain{
+    background-image: none;
+    background-color: #DAD4B5;
+    font-size: 20px;
+    padding: 20%;
+    padding-top:7%
+    
+}
+
+.aboutusMain div{
+    text-align: center;
+}
+
+.aboutusMain h1{
+    text-align: center;
+}
+.aboutcontent{
+    margin-bottom: 50px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 5px;
+    column-gap: 20px;
+    margin-top: 5%;
+    justify-content: baseline;
+    align-items: center;
+}
+.grid div{
+    border: 5px ridge black;
+    border-radius: 10px;
+    padding: 2px 50px;
+}
+.BookListMain{
+    background-color:#F2E8C6;
+    min-height: 100vh;
+}
+.BookListMain div{
+    text-align: center;
+    padding: 2%;
+}
+.BookListMain h1{
+    font-size: 5vw;
+    margin: 0px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+.flex img{
+    height:35vh;
+    border-style: ridge;
+    
+    border-radius: 10px;
+    border-width: 5px;
+    padding: 2px;
+}
+.flex img:nth-child(odd){
+    border-color: red;
+    
+    
+}
+.flex img:nth-child(even){
+    border-color: black;
+    
+    
+}
+
+div.row{
+    text-align: left;
+    font-size: 2vw;
+}
+footer{
+    background-color: #A73121;
+    color: #DAD4B5;
+    padding: 0px;
+    font-size: medium;
+    margin: 0px;
+}
+footer div{
+    padding:2%;
+    text-align: left;
+}
+footer p{
+    margin:0px;
+    
+}
