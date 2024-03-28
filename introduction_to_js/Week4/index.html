@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="css/gallery.css">
+	<script src = "js/gallery.js"></script>
+</head>
+<body onload="loadingfunction()">
+	
+	<div id = "image">
+		Hover over an image below to display here.
+	</div>
+	<div class="flex">
+
+		<img class = "preview" alt = "A Purple Daisy Flower" src = "https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
+		
+		<img class = "preview" alt = "A Flower Wreath saying Hello Spring" src = "https://img.freepik.com/free-photo/wreath-flowers-with-hello-spring_23-2148860007.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
+		
+		<img class = "preview" src = "https://img.freepik.com/free-psd/mandala-fractal-design-element-with-flower-pattern-isolated-transparent-background_191095-20714.jpg" alt = "A mandala Floral Design" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+		<img class = "preview" src = "https://img.freepik.com/free-photo/top-view-roses-flowers_23-2148860041.jpg" alt = "Roses" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()" >
+
+		<img class = "preview" src = "https://img.freepik.com/free-psd/cosmos-flower-isolated-transparent-background_191095-33363.jpg" alt = "Cosmos Flower" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()" >
+
+		<img class = "preview" src = "https://img.freepik.com/free-psd/wisteria-flower-png-isolated-transparent-background_191095-12625.jpg" alt = "Wisteria Flower " onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()" >
+	
+	</div>
+</body>
+</html>
