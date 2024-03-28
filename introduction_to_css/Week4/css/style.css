@@ -96,11 +96,11 @@ div{
 .button{
     background-color: #A73121;
     color: #F2E8C6;
-    min-width: 150px;
-    min-height: 50px;
+    min-width: 10vw;
+    min-height: 5vw;
     border-radius: 10px;
     border: none;
-    font-size: 40px;
+    font-size: xx-large;
 }
 
 a.button {
@@ -144,7 +144,9 @@ a.button {
     border: 5px ridge black;
     border-radius: 10px;
     padding: 10px;
-    min-height: 15vh;
+    font-size: 1.3vw;
+    min-height: 10vw;
+    min-width: 20vw;
     align-items: center;
 }
 .BookListMain{
