@@ -18,7 +18,9 @@ h1 {
 h2{
     text-align:center;
   }
-
+p{
+    text-align: justify;
+}
 li{
     margin-top: 20px;
 }
@@ -26,10 +28,157 @@ li{
 img{
     border: 5px solid blue;
     border-radius: 35px;
-    width: 100%;
+    width:100%;
   }
 
 .label{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+img{
+    border-radius:35px 35px 0 0;
+}
+
+figure{
+    border-radius: 0px;
+}
+
+figcaption{
+    position: relative;
+    text-align: center;
+    top: -1.5vw;
+    width: 100%;
+    height: 6vw;
+    min-height: 4.5vw;
+    background-color: beige;
+    border: 5px solid blue;
+    border-radius:  0 0 35px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+@media all and (min-width:772px){
+    .grid{
+        grid-template-columns: 50% 50%;
+        align-items: baseline;
+    }
+    img{
+        border-radius: 50%;
+        width: 40vw;
+        height: 40vw;
+        margin: 0 auto;
+        border:none;
+    }
+    
+
+    figure{
+        border:1px none white;
+        border-radius:50%;
+        overflow: hidden;
+        width: 40vw;
+        height: 40vw;
+        border:5px solid blue;
+        padding: 0;
+
+    }
+    figcaption{
+        
+        top: -8.5vw;
+        height: 7vw;
+        border-radius: 0 0 50% 50%;
+        border: 5px solid blue;
+    }
+    .grid figure:last-child{
+        
+        grid-column: 1/span 2;
+        width:80vw;
+        margin: 0 7vw;
+        text-align: center;
+    }
+    .grid figure:last-child img{
+       
+        width:80vw;
+        margin:0 auto;
+    }
+
+}
+
+
+@media all and (min-width:998px){
+    .grid{
+        grid-template-columns: 50% 50%;
+        align-items: baseline;
+        justify-content: flex-end;
+        justify-items: center;
+    }
+    img{
+        border-radius: 35px 35px 0 0 ;
+        width: 25vw;
+        height: 25vw;
+        margin: 0 auto;
+        border:5px solid blue;;
+    }
+    figure{
+        border-radius: 0;
+        width: 25vw;
+        height: 30vw;
+        border:none;
+        overflow: visible;
+
+        
+     
+
+    }
+    figcaption{
+        top:-2vw;
+        border-radius: 0 0 35px 35px;
+        margin: 10px auto;
+    }
+    .grid figure:nth-child(3n){
+        grid-column: 1/span 2;
+        width:80vw;
+        margin:5% auto;
+        
+
+    }
+    .grid figure:nth-child(3n) img{
+
+        width:80vw;
+        margin-right:5%;
+
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: unset;
+    }
+}
+
+
+
+@media (prefers-color-scheme: dark){
+
+    figcaption{
+        background-color: rgb(29, 29, 29);
+        color: beige;
+        border-color: rgb(29, 29, 29);
+    }
+    figure img{
+        border-color: rgb(29, 29, 29);
+    }
+    figure{
+        border-color: rgb(29, 29, 29);
+    }
 }
