@@ -61,7 +61,7 @@ p {
 	transition-property: background-color, color;
 }
 .btt:hover {
-	color: white;
+	color: rgb(41, 14, 14);
 	background-color: goldenrod;
 }
 .sol{
@@ -321,6 +321,7 @@ span{
 }
 
 /* End home Section */
+
 /* About Section */
 #about .about {
 	flex-direction: column-reverse;
@@ -623,7 +624,7 @@ hr{
 	resize:none;
 	
 }
-.contactform .InputBox span{
+.contactform .InputBox label{
 	position: absolute;
 	left: 0;
 	padding: 5px 0;
@@ -633,10 +634,10 @@ hr{
 	transition: .5s;
 	color: #666;
 }
-.contactform .InputBox input:focus ~ span,
-.contactform .InputBox input:valid ~ span,
-.contactform .InputBox textarea:focus ~ span,
-.contactform .InputBox textarea:valid ~ span{
+.contactform .InputBox input:focus ~ label,
+.contactform .InputBox input:valid ~ label,
+.contactform .InputBox textarea:focus ~ label,
+.contactform .InputBox textarea:valid ~ label{
 	color:#ec9412;
 	font-size: 12px;
 	transform: translateY(-17px);
